@@ -7,6 +7,7 @@ async function fetchCSV() {
 
         // 2. 解析 CSV 数据
         const rows = csvText.split('\n').map(row => row.split(',')); // 按行和逗号分割
+        console.log('Parsed Rows:', rows); // 打印解析后的数据
 
         // 3. 更新表格
         const tableBody = document.querySelector('#data-table tbody');
